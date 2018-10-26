@@ -60,6 +60,66 @@ int main(int argc, char * argv[]) {
         
         // 以什么结尾
         Boolean issub = [str7 hasSuffix:@"8"];
+        
+        // 等值比较
+        NSString *str8 = @"1234";
+        if ([str8 isEqualToString:@"1234"] ) {
+            NSLog(@"是");
+        } else {
+            NSLog(@"不是");
+        }
+        
+        // 转换数据类型
+        NSString *str9 = @"123";
+        int i = [str9 intValue];
+        NSLog(@"=========%d", i);
+        double b = [str9 doubleValue];
+        NSLog(@"==========%g", b);
+        
+        // 提取子字符串
+        NSString *str10 = @"123.4";
+        NSLog(@"=========%@", [str10 substringFromIndex:0]); // 类似于 substr
+        NSLog(@"=========%@", [str10 substringToIndex:2]);
+        NSRange rang1 = {0,2};
+        NSLog(@"=========%@", [str10 substringWithRange: rang1]);
+        
+        // 剔除字符串两端的空格
+        NSString *str11 = @"123";
+        NSString *str12 = @" 456 ";
+        str12 = [str12 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        NSString *str13 = @"7";
+        NSLog(@"%@%@%@", str11, str12, str13);
+        
+        // 字符串写入文件
+        [str11 writeToFile:@"abc.txt" atomically:NO encoding:NSUTF8StringEncoding error:nil];
+        
+        // 读取文件
+        // 出错对象
+        NSError *error;
+        str11 = [NSString stringWithContentsOfFile:@"abc.txt" encoding:NSUTF8StringEncoding error:&error];
+        NSLog(@"读取文件==========%@======error======%@", str11, error);
+        
+        // 字符串的拼接
+        NSString *str14 = [NSString stringWithFormat:@"%@%@", str12, str13];
+        NSLog(@"拼接完成的字符串=========%@", str14);
+        str14 = [str stringByAppendingString:@"000"];
+        NSLog(@"拼接完成的字符串==========%@", str14);
+        
+        /**
+    
+         动态字符串
+         **/
+        NSMutableString *str15 = [NSMutableString stringWithCapacity:100];
+        NSLog(@"15=====%@", str15);
+        // 增加字符串
+        [str15 appendString:@"1234"];
+        // 格式化增加字符串
+        [str15 appendFormat:@"%d", 123];
+        NSRange range2 = {0, 2};
+        // 替换字符串
+        [str15 replaceCharactersInRange:range2 withString:@"abd"];
+        NSLog(@"15=======%@", str15);
+        
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }
