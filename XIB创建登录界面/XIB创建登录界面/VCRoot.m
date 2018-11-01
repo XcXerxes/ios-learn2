@@ -49,6 +49,7 @@
 }
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    // 点击屏幕空白处 收回键盘
     [_mTFUserName resignFirstResponder];
     [_mTFPassword resignFirstResponder];
 }
