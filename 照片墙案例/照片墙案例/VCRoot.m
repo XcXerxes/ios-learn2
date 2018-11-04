@@ -36,8 +36,13 @@
     sv.userInteractionEnabled = YES;
     // 创建图片
     for (int i=0; i < 15; i++) {
-        NSString *strName = [NSString stringWithFormat:@"%d.jpg", i+1];
-        UIImage *image = [UIImage imageNamed:strName];
+        // 创建 远程URL 的图片
+        /*NSString *str = @"https://picsum.photos/300/400?image=";
+        NSString *strName = [NSString stringWithFormat:@"%d", i+1];
+        NSString *str1 = [str stringByAppendingString:strName];
+        NSURL *imageURL = [NSURL URLWithString:str1];
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:imageURL]];*/
+        UIImage *image = [UIImage imageNamed: [NSString stringWithFormat:@"%d.jpg", i+1]];
         UIImageView *iView = [[UIImageView alloc] initWithImage:image];
         
         iView.frame = CGRectMake(3+(i%3)*104, (i/3)*160, self.view.bounds.size.width /3 -10, 160);
@@ -55,17 +60,30 @@
         // 单次手指
         tap.numberOfTouchesRequired = 1;
         [iView addGestureRecognizer:tap];
+        
+        iView.tag = 101 + i;
     }
     
     [self.view addSubview:sv];
 }
 
--(void)pressTap:(UITapGestureRecognizer *)tap {
+// 方法二： 通过 image 传递实现
+
+/*-(void)pressTap:(UITapGestureRecognizer *)tap {
     NSLog(@"1234!!!");
+    UIImageView *imageView = (UIImageView *)tap.view;
     VCImageShow *imageShow = [[VCImageShow alloc] init];
+    // 传递 image  就可以实现
+    imageShow.image = imageView.image;
+    [self.navigationController pushViewController:imageShow animated:YES];
+}*/
+-(void)pressTap: (UITapGestureRecognizer *)tap {
+    UIImageView *imageView = (UIImageView *)tap.view;
+    VCImageShow *imageShow = [[VCImageShow alloc] init];
+    
+    imageShow.imageTag = imageView.tag;
     [self.navigationController pushViewController:imageShow animated:YES];
 }
-
 /*
 #pragma mark - Navigation
 
