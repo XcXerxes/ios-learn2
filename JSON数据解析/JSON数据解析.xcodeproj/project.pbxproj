@@ -1,0 +1,350 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF4BFC0C219022B900760CED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4BFC0B219022B900760CED /* AppDelegate.m */; };
+		CF4BFC0F219022B900760CED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4BFC0E219022B900760CED /* ViewController.m */; };
+		CF4BFC12219022B900760CED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4BFC10219022B900760CED /* Main.storyboard */; };
+		CF4BFC14219022B900760CED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF4BFC13219022B900760CED /* Assets.xcassets */; };
+		CF4BFC17219022B900760CED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF4BFC15219022B900760CED /* LaunchScreen.storyboard */; };
+		CF4BFC1A219022B900760CED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4BFC19219022B900760CED /* main.m */; };
+		CF4BFC21219022E800760CED /* mock.json in Resources */ = {isa = PBXBuildFile; fileRef = CF4BFC20219022E800760CED /* mock.json */; };
+		CF4BFC242190242A00760CED /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CF4BFC232190242A00760CED /* BookModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CF4BFC07219022B900760CED /* JSON数据解析.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JSON数据解析.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF4BFC0A219022B900760CED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF4BFC0B219022B900760CED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF4BFC0D219022B900760CED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF4BFC0E219022B900760CED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF4BFC11219022B900760CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF4BFC13219022B900760CED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF4BFC16219022B900760CED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF4BFC18219022B900760CED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF4BFC19219022B900760CED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF4BFC20219022E800760CED /* mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = mock.json; path = "../JSON文件格式/mock.json"; sourceTree = "<group>"; };
+		CF4BFC222190242A00760CED /* BookModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
+		CF4BFC232190242A00760CED /* BookModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF4BFC04219022B900760CED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF4BFBFE219022B900760CED = {
+			isa = PBXGroup;
+			children = (
+				CF4BFC20219022E800760CED /* mock.json */,
+				CF4BFC09219022B900760CED /* JSON数据解析 */,
+				CF4BFC08219022B900760CED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF4BFC08219022B900760CED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF4BFC07219022B900760CED /* JSON数据解析.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF4BFC09219022B900760CED /* JSON数据解析 */ = {
+			isa = PBXGroup;
+			children = (
+				CF4BFC0A219022B900760CED /* AppDelegate.h */,
+				CF4BFC0B219022B900760CED /* AppDelegate.m */,
+				CF4BFC0D219022B900760CED /* ViewController.h */,
+				CF4BFC0E219022B900760CED /* ViewController.m */,
+				CF4BFC222190242A00760CED /* BookModel.h */,
+				CF4BFC232190242A00760CED /* BookModel.m */,
+				CF4BFC10219022B900760CED /* Main.storyboard */,
+				CF4BFC13219022B900760CED /* Assets.xcassets */,
+				CF4BFC15219022B900760CED /* LaunchScreen.storyboard */,
+				CF4BFC18219022B900760CED /* Info.plist */,
+				CF4BFC19219022B900760CED /* main.m */,
+			);
+			path = "JSON数据解析";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF4BFC06219022B900760CED /* JSON数据解析 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF4BFC1D219022B900760CED /* Build configuration list for PBXNativeTarget "JSON数据解析" */;
+			buildPhases = (
+				CF4BFC03219022B900760CED /* Sources */,
+				CF4BFC04219022B900760CED /* Frameworks */,
+				CF4BFC05219022B900760CED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JSON数据解析";
+			productName = "JSON数据解析";
+			productReference = CF4BFC07219022B900760CED /* JSON数据解析.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF4BFBFF219022B900760CED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Antony x";
+				TargetAttributes = {
+					CF4BFC06219022B900760CED = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = CF4BFC02219022B900760CED /* Build configuration list for PBXProject "JSON数据解析" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF4BFBFE219022B900760CED;
+			productRefGroup = CF4BFC08219022B900760CED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF4BFC06219022B900760CED /* JSON数据解析 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF4BFC05219022B900760CED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4BFC17219022B900760CED /* LaunchScreen.storyboard in Resources */,
+				CF4BFC14219022B900760CED /* Assets.xcassets in Resources */,
+				CF4BFC12219022B900760CED /* Main.storyboard in Resources */,
+				CF4BFC21219022E800760CED /* mock.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF4BFC03219022B900760CED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF4BFC0F219022B900760CED /* ViewController.m in Sources */,
+				CF4BFC1A219022B900760CED /* main.m in Sources */,
+				CF4BFC242190242A00760CED /* BookModel.m in Sources */,
+				CF4BFC0C219022B900760CED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CF4BFC10219022B900760CED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4BFC11219022B900760CED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF4BFC15219022B900760CED /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF4BFC16219022B900760CED /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF4BFC1B219022B900760CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CF4BFC1C219022B900760CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF4BFC1E219022B900760CED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "JSON数据解析/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antony.test.JSON----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF4BFC1F219022B900760CED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "JSON数据解析/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.antony.test.JSON----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF4BFC02219022B900760CED /* Build configuration list for PBXProject "JSON数据解析" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4BFC1B219022B900760CED /* Debug */,
+				CF4BFC1C219022B900760CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF4BFC1D219022B900760CED /* Build configuration list for PBXNativeTarget "JSON数据解析" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF4BFC1E219022B900760CED /* Debug */,
+				CF4BFC1F219022B900760CED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF4BFBFF219022B900760CED /* Project object */;
+}
